@@ -519,18 +519,6 @@ export default function Header({
                         <Translate value="UNDO" />
                     </div>
                 </div>
-                <div className="translate">
-                    <select value={translate} onChange={(event) => setTranslate(event.target.value)}>
-                        {(languages[language] || languages.en).map((item) => (
-                            <option key={item.key} value={item.key}>
-                                {item.name}
-                            </option>
-                        ))}
-                    </select>
-                    <div className="btn" onClick={onTranslate}>
-                        <Translate value="TRANSLATE" />
-                    </div>
-                </div>
                 <div className="hotkey">
                     <span>
                         <Translate value="HOTKEY_01" />
@@ -539,12 +527,6 @@ export default function Header({
                         <Translate value="HOTKEY_02" />
                     </span>
                 </div>
-            </div>
-            <div className="bottom">
-                <a href="https://online.aimu-app.com/">
-                    <div className="title">全新字幕编辑器来了，点击这里体验</div>
-                    <img src="/aimu.png" alt="aimu" />
-                </a>
             </div>
         </Style>
     );
