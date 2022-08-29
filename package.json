@@ -23,7 +23,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf docs && mv build docs"
+    "build": "react-scripts build && rm -rf docs && mv build docs",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
